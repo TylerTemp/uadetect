@@ -28,6 +28,8 @@ class Test(unittest.TestCase):
     def test_uc(self):
         self.assertEqual(browser('Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 UBrowser/3.1.1644.29 Safari/537.36'), 'uc')
 
+    def test_juzi(self):
+        self.assertEqual(browser('Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; JuziBrowser)'), 'juzi')
 
 # TODO: More test
 

@@ -1,10 +1,11 @@
 import re
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 __author__ = '<TylerTemp> tylertempdev@gmail.com'
 
 # ensure the order, use list instead
 ua_re = [
+    ('juzi', re.compile(r'JuziBrowser')),
     ('sogou', re.compile(r'SE\s2\.X|SogouMobileBrowser')),
     ('2345', re.compile(r'2345Explorer|2345chrome|Mb2345Browser')),
     ('liebao', re.compile(r'LBBROWSER')),
